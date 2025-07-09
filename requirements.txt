@@ -1,25 +1,44 @@
-torch>=2
-torchvision
+# Core ML frameworks with compatible versions
+torch>=2.3.0
+torchvision>=0.18.0
+numpy>=1.24.0,<2.0.0
+
+# Deep learning utilities
 tensorboard
 wandb
-iopath
-pyyaml
-numpy
-opencv-python
-submitit
-braceexpand
-webdataset
 timm
 transformers
 peft
-decord
-pandas
 einops
 beartype
-psutil
-h5py
-fire
-python-box
+
+# Data processing
+opencv-python
+decord
+pandas
 scikit-image
+h5py
+
+# File and data handling
+iopath
+pyyaml
+webdataset
+braceexpand
 ftfy
+
+# Distributed computing
+submitit
+
+# System utilities
+psutil
+python-box
+fire
+
+# Development tools
 jupyter
+
+# Note: If you need to use PyTorch 2.1.0 specifically (e.g., for CUDA 11.8 compatibility),
+# use this alternative configuration instead:
+# torch==2.1.0
+# torchvision==0.16.0
+# numpy>=1.24.0,<2.0.0
